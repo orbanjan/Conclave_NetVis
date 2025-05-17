@@ -1,135 +1,135 @@
 Id,Country,Continent,Order,Age,Weight
-Pietro Parolin,Italy,Europe,CB,70,375.0
-Fernando Filoni,Italy,Europe,CB,79,284.0
-Luis Antonio Tagle,Philippines,Asia,CB,67,366.0
-Robert Francis Prevost OSA,United States,North America,CB,69,474.0
-Louis Raphaël I Sako,Iraq,Asia,CB,76,326.0
-Vinko Puljić,Bosnia and Herzegovina,Europe,CP,79,116.0
-Peter Turkson,Ghana,Africa,CP,76,84.0
-Josip Bozanić,Croatia,Europe,CP,76,119.0
-Philippe Barbarin,France,Europe,CP,74,122.0
-Péter Erdő,Hungary,Europe,CP,72,119.0
-Stanisław Ryłko,Poland,Europe,CP,79,137.0
-Francisco Robles Ortega,Mexico,North America,CP,76,103.0
-Daniel DiNardo,United States,North America,CP,75,110.0
+Pietro Parolin,Italy,Europe,CB,70,377.0
+Fernando Filoni,Italy,Europe,CB,79,286.0
+Luis Antonio Tagle,Philippines,Asia,CB,67,369.0
+Robert Francis Prevost OSA,United States,North America,CB,69,477.0
+Louis Raphaël I Sako,Iraq,Asia,CB,76,329.0
+Vinko Puljić,Bosnia and Herzegovina,Europe,CP,79,118.0
+Peter Turkson,Ghana,Africa,CP,76,82.0
+Josip Bozanić,Croatia,Europe,CP,76,121.0
+Philippe Barbarin,France,Europe,CP,74,125.0
+Péter Erdő,Hungary,Europe,CP,72,121.0
+Stanisław Ryłko,Poland,Europe,CP,79,139.0
+Francisco Robles Ortega,Mexico,North America,CP,76,105.0
+Daniel DiNardo,United States,North America,CP,75,113.0
 Odilo Scherer,Brazil,South America,CP,75,107.0
-Robert Sarah,Guinea,Africa,CP,79,101.0
-Raymond Leo Burke,United States,North America,CP,76,112.0
-Kurt Koch,Switzerland,Europe,CP,75,137.0
-Kazimierz Nycz,Poland,Europe,CP,75,139.0
-Malcolm Ranjith,Sri Lanka,Asia,CP,77,105.0
-Reinhard Marx,Germany,Europe,CP,71,138.0
+Robert Sarah,Guinea,Africa,CP,79,99.0
+Raymond Leo Burke,United States,North America,CP,76,115.0
+Kurt Koch,Switzerland,Europe,CP,75,139.0
+Kazimierz Nycz,Poland,Europe,CP,75,141.0
+Malcolm Ranjith,Sri Lanka,Asia,CP,77,108.0
+Reinhard Marx,Germany,Europe,CP,71,140.0
 João Braz de Aviz,Brazil,South America,CP,77,110.0
-Thomas Collins,Canada,North America,CP,78,107.0
-Wim Eijk,Netherlands,Europe,CP,71,137.0
-Giuseppe Betori,Italy,Europe,CP,78,153.0
-Timothy Dolan,United States,North America,CP,75,113.0
-Rainer Woelki,Germany,Europe,CP,68,270.0
-James Michael Harvey,United States,North America,CP,75,109.0
-Baselios Cleemis,India,Asia,CP,65,236.0
-Gerhard Ludwig Müller,Germany,Europe,CP,77,230.0
-Vincent Nichols,United Kingdom,Europe,CP,79,230.0
-Leopoldo Brenes,Nicaragua,North America,CP,76,196.0
-Gérald Lacroix ISPX,Canada,North America,CP,67,329.0
-Jean-Pierre Kutwa,Ivory Coast,Africa,CP,79,194.0
+Thomas Collins,Canada,North America,CP,78,110.0
+Wim Eijk,Netherlands,Europe,CP,71,139.0
+Giuseppe Betori,Italy,Europe,CP,78,155.0
+Timothy Dolan,United States,North America,CP,75,116.0
+Rainer Woelki,Germany,Europe,CP,68,272.0
+James Michael Harvey,United States,North America,CP,75,112.0
+Baselios Cleemis,India,Asia,CP,65,239.0
+Gerhard Ludwig Müller,Germany,Europe,CP,77,232.0
+Vincent Nichols,United Kingdom,Europe,CP,79,232.0
+Leopoldo Brenes,Nicaragua,North America,CP,76,198.0
+Gérald Lacroix ISPX,Canada,North America,CP,67,332.0
+Jean-Pierre Kutwa,Ivory Coast,,CP,79,184.0
 Orani João Tempesta OCist,Brazil,South America,CP,74,201.0
 Mario Aurelio Poli,Argentina,South America,CP,77,198.0
-Philippe Ouédraogo,Burkina Faso,Africa,CP,79,193.0
-Chibly Langlois,Haiti,North America,CP,66,327.0
-Manuel Clemente,Portugal,Europe,CP,76,231.0
-Berhaneyesus Demerew Souraphiel CM,Ethiopia,Africa,CP,76,193.0
-John Dew,New Zealand,Oceania,CP,76,181.0
-Charles Maung Bo SDB,Myanmar,Asia,CP,76,197.0
-Kriengsak Kovitvanit,Thailand,Asia,CP,75,197.0
-Francesco Montenegro,Italy,Europe,CP,78,244.0
+Philippe Ouédraogo,Burkina Faso,Africa,CP,79,191.0
+Chibly Langlois,Haiti,North America,CP,66,329.0
+Manuel Clemente,Portugal,Europe,CP,76,233.0
+Berhaneyesus Demerew Souraphiel CM,Ethiopia,Africa,CP,76,191.0
+John Dew,New Zealand,Oceania,CP,76,182.0
+Charles Maung Bo SDB,Myanmar,Asia,CP,76,200.0
+Kriengsak Kovitvanit,Thailand,Asia,CP,75,200.0
+Francesco Montenegro,Italy,Europe,CP,78,246.0
 Daniel Sturla SDB,Uruguay,South America,CP,65,326.0
-Arlindo Gomes Furtado,Cape Verde,Africa,CP,75,193.0
-Soane Patita Paini Mafi,Tonga,Oceania,CP,63,312.0
-Dieudonné Nzapalainga CSSp,Central African Republic,Africa,CP,58,324.0
-Carlos Osoro Sierra,Spain,Europe,CP,79,231.0
+Arlindo Gomes Furtado,Cape Verde,,CP,75,183.0
+Soane Patita Paini Mafi,Tonga,Oceania,CP,63,313.0
+Dieudonné Nzapalainga CSSp,Central African Republic,Africa,CP,58,322.0
+Carlos Osoro Sierra,Spain,Europe,CP,79,233.0
 Sérgio da Rocha,Brazil,South America,CP,65,332.0
-Blase J. Cupich,United States,North America,CP,76,204.0
-Jozef De Kesel,Belgium,Europe,CP,77,228.0
-Carlos Aguiar Retes,Mexico,North America,CP,75,197.0
-John Ribat MSC,Papua New Guinea,Oceania,CP,68,312.0
-Joseph W. Tobin CSsR,United States,North America,CP,72,204.0
-Juan José Omella,Spain,Europe,CP,79,223.0
-Anders Arborelius OCD,Sweden,Europe,CP,75,220.0
-Angelo De Donatis,Italy,Europe,CP,71,242.0
-Joseph Coutts,Pakistan,Asia,CP,79,195.0
-António Marto,Portugal,Europe,CP,77,229.0
-Désiré Tsarahazana,Madagascar,Africa,CP,70,191.0
-Giuseppe Petrocchi,Italy,Europe,CP,76,242.0
-Thomas Aquino Manyo Maeda,Japan,Asia,CP,76,196.0
-Ignatius Suharyo Hardjoatmodjo,Indonesia,Asia,CP,74,196.0
-Juan García Rodríguez,Cuba,North America,CP,76,195.0
-Fridolin Ambongo Besungu OFMCap,Democratic Republic of the Congo,Africa,CP,65,323.0
-Jean-Claude Hollerich SJ,Luxembourg,Europe,CP,66,358.0
-Álvaro Leonel Ramazzini Imeri,Guatemala,North America,CP,77,195.0
-Matteo Zuppi,Italy,Europe,CP,69,374.0
-Cristóbal López Romero SDB,Morocco[f],,CP,72,178.0
-Antoine Kambanda,Rwanda,Africa,CP,66,321.0
-Wilton Daniel Gregory,United States,North America,CP,77,201.0
-Jose Advincula OP,Philippines,Asia,CP,73,196.0
-Augusto Paolo Lojudice,Italy,Europe,CP,60,372.0
-Jean-Marc Aveline,France,Europe,CP,66,366.0
-Peter Okpaleke,Nigeria,Africa,CP,62,328.0
+Blase J. Cupich,United States,North America,CP,76,207.0
+Jozef De Kesel,Belgium,Europe,CP,77,230.0
+Carlos Aguiar Retes,Mexico,North America,CP,75,199.0
+John Ribat MSC,Papua New Guinea,Oceania,CP,68,313.0
+Joseph W. Tobin CSsR,United States,North America,CP,72,207.0
+Juan José Omella,Spain,Europe,CP,79,225.0
+Anders Arborelius OCD,Sweden,Europe,CP,75,222.0
+Angelo De Donatis,Italy,Europe,CP,71,244.0
+Joseph Coutts,Pakistan,Asia,CP,79,198.0
+António Marto,Portugal,Europe,CP,77,231.0
+Désiré Tsarahazana,Madagascar,Africa,CP,70,189.0
+Giuseppe Petrocchi,Italy,Europe,CP,76,244.0
+Thomas Aquino Manyo Maeda,Japan,Asia,CP,76,199.0
+Ignatius Suharyo Hardjoatmodjo,Indonesia,Asia,CP,74,199.0
+Juan García Rodríguez,Cuba,North America,CP,76,197.0
+Fridolin Ambongo Besungu OFMCap,Democratic Republic of the Congo,,CP,65,313.0
+Jean-Claude Hollerich SJ,Luxembourg,Europe,CP,66,360.0
+Álvaro Leonel Ramazzini Imeri,Guatemala,North America,CP,77,197.0
+Matteo Zuppi,Italy,Europe,CP,69,376.0
+Cristóbal López Romero SDB,Morocco,Africa,CP,72,190.0
+Antoine Kambanda,Rwanda,Africa,CP,66,319.0
+Wilton Daniel Gregory,United States,North America,CP,77,204.0
+Jose Advincula OP,Philippines,Asia,CP,73,199.0
+Augusto Paolo Lojudice,Italy,Europe,CP,60,374.0
+Jean-Marc Aveline,France,Europe,CP,66,369.0
+Peter Okpaleke,Nigeria,Africa,CP,62,326.0
 Leonardo Ulrich Steiner OFM,Brazil,South America,CP,74,205.0
-Filipe Neri Ferrão,India,Asia,CP,72,204.0
-Robert McElroy,United States,North America,CP,71,208.0
-Virgílio do Carmo da Silva SDB,Timor-Leste,Asia,CP,57,332.0
-Oscar Cantoni,Italy,Europe,CP,74,248.0
-Anthony Poola,India,Asia,CP,63,335.0
+Filipe Neri Ferrão,India,Asia,CP,72,207.0
+Robert McElroy,United States,North America,CP,71,211.0
+Virgílio do Carmo da Silva SDB,Timor-Leste,,CP,57,318.0
+Oscar Cantoni,Italy,Europe,CP,74,250.0
+Anthony Poola,India,Asia,CP,63,338.0
 Paulo Cezar Costa,Brazil,South America,CP,57,336.0
-William Goh,Singapore,Asia,CP,67,332.0
+William Goh,Singapore,Asia,CP,67,335.0
 Adalberto Martínez Flores,Paraguay,South America,CP,73,199.0
-Giorgio Marengo IMC,Mongolia[g],,CP,50,314.0
-Pierbattista Pizzaballa OFM,Jerusalem[h],,CP,60,318.0
-Stephen Brislin,South Africa,Africa,CP,68,332.0
+Giorgio Marengo IMC,Mongolia,Asia,CP,50,335.0
+Pierbattista Pizzaballa OFM,Jerusalem,Asia,CP,60,339.0
+Stephen Brislin,South Africa,Africa,CP,68,330.0
 Ángel Sixto Rossi SJ,Argentina,South America,CP,66,337.0
 Luis José Rueda Aparicio,Colombia,South America,CP,63,334.0
-Grzegorz Ryś,Poland,Europe,CP,61,370.0
-Stephen Ameyu Martin Mulla,South Sudan,Africa,CP,61,332.0
-José Cobo Cano,Spain,Europe,CP,59,370.0
-Protase Rugambwa,Tanzania,Africa,CP,64,332.0
-Sebastian Francis,Malaysia,Asia,CP,73,205.0
+Grzegorz Ryś,Poland,Europe,CP,61,372.0
+Stephen Ameyu Martin Mulla,South Sudan,Africa,CP,61,330.0
+José Cobo Cano,Spain,Europe,CP,59,372.0
+Protase Rugambwa,Tanzania,Africa,CP,64,330.0
+Sebastian Francis,Malaysia,Asia,CP,73,208.0
 Stephen Chow Sau-yan SJ,"China
-(Hong Kong)[i]",,CP,65,318.0
-François-Xavier Bustillo OFMConv,France[j],,CP,56,318.0
-Américo Aguiar,Portugal,Europe,CP,51,370.0
+(Hong Kong)",Asia,CP,65,339.0
+François-Xavier Bustillo OFMConv,France,Europe,CP,56,373.0
+Américo Aguiar,Portugal,Europe,CP,51,372.0
 Carlos Castillo Mattasoglio,Peru,South America,CP,75,205.0
 Vicente Bokalic Iglic CM,Argentina,South America,CP,72,208.0
 Luis Cabrera Herrera OFM,Ecuador,South America,CP,69,336.0
 Fernando Chomalí Garib,Chile,South America,CP,68,336.0
-Tarcisio Isao Kikuchi SVD,Japan,Asia,CP,66,339.0
-Pablo Virgilio David,Philippines,Asia,CP,66,340.0
-Ladislav Nemet SVD,Serbia[k],,CP,68,320.0
+Tarcisio Isao Kikuchi SVD,Japan,Asia,CP,66,342.0
+Pablo Virgilio David,Philippines,Asia,CP,66,343.0
+Ladislav Nemet SVD,Serbia,Europe,CP,68,371.0
 Jaime Spengler OFM,Brazil,South America,CP,64,342.0
-Ignace Bessi Dogbo,Ivory Coast,Africa,CP,63,335.0
-Jean-Paul Vesco OP,Algeria[l],,CP,63,320.0
-Dominique Mathieu OFMConv,Iran[m],,CP,61,320.0
-Roberto Repole,Italy,Europe,CP,58,385.0
-Baldassare Reina,Italy,Europe,CP,54,385.0
-Frank Leo,Canada,North America,CP,53,339.0
-Mykola Bychok CSsR,Australia[n],,CP,45,320.0
-Domenico Battaglia,Italy,Europe,CP,62,385.0
-Dominique Mamberti,France,Europe,CD,73,231.0
-Mario Zenari,Italy,Europe,CD,79,244.0
-Kevin Farrell,United States[o],,CD,77,179.0
-Konrad Krajewski,Poland,Europe,CD,61,360.0
-José Tolentino de Mendonça,Portugal,Europe,CD,59,361.0
-Michael Czerny SJ,Canada[p],,CD,78,178.0
-Mario Grech,Malta,Europe,CD,68,356.0
-Marcello Semeraro,Italy,Europe,CD,77,241.0
-Mauro Gambetti OFMConv,Italy,Europe,CD,59,372.0
-Arthur Roche,United Kingdom,Europe,CD,75,234.0
-Lazarus You Heung-sik,South Korea,Asia,CD,73,201.0
-Claudio Gugerotti,Italy,Europe,CD,69,383.0
+Ignace Bessi Dogbo,Ivory Coast,,CP,63,325.0
+Jean-Paul Vesco OP,Algeria,Africa,CP,63,332.0
+Dominique Mathieu OFMConv,Iran,Asia,CP,61,341.0
+Roberto Repole,Italy,Europe,CP,58,387.0
+Baldassare Reina,Italy,Europe,CP,54,387.0
+Frank Leo,Canada,North America,CP,53,342.0
+Mykola Bychok CSsR,Australia,Oceania,CP,45,323.0
+Domenico Battaglia,Italy,Europe,CP,62,387.0
+Dominique Mamberti,France,Europe,CD,73,234.0
+Mario Zenari,Italy,Europe,CD,79,246.0
+Kevin Farrell,United States,North America,CD,77,207.0
+Konrad Krajewski,Poland,Europe,CD,61,362.0
+José Tolentino de Mendonça,Portugal,Europe,CD,59,363.0
+Michael Czerny SJ,Canada,North America,CD,78,200.0
+Mario Grech,Malta,Europe,CD,68,358.0
+Marcello Semeraro,Italy,Europe,CD,77,243.0
+Mauro Gambetti OFMConv,Italy,Europe,CD,59,374.0
+Arthur Roche,United Kingdom,Europe,CD,75,236.0
+Lazarus You Heung-sik,South Korea,Asia,CD,73,204.0
+Claudio Gugerotti,Italy,Europe,CD,69,385.0
 Víctor Manuel Fernández,Argentina,South America,CD,62,337.0
-Emil Paul Tscherrig,Switzerland,Europe,CD,78,237.0
-Christophe Pierre,France,Europe,CD,79,239.0
-Ángel Fernández Artime SDB,Spain,Europe,CD,64,370.0
-Rolandas Makrickas,Lithuania,Europe,CD,53,369.0
-Timothy Radcliffe OP,United Kingdom,Europe,CD,79,240.0
-Fabio Baggio CS,Italy,Europe,CD,60,385.0
-George Koovakad,India,Asia,CD,51,341.0
+Emil Paul Tscherrig,Switzerland,Europe,CD,78,239.0
+Christophe Pierre,France,Europe,CD,79,242.0
+Ángel Fernández Artime SDB,Spain,Europe,CD,64,372.0
+Rolandas Makrickas,Lithuania,Europe,CD,53,371.0
+Timothy Radcliffe OP,United Kingdom,Europe,CD,79,242.0
+Fabio Baggio CS,Italy,Europe,CD,60,387.0
+George Koovakad,India,Asia,CD,51,344.0

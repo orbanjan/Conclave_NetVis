@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from community import community_louvain
 import seaborn as sns
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 
 # Load the data
 nodes_df = pd.read_csv('nodes.csv')
@@ -158,4 +160,144 @@ plt.tight_layout()
 plt.savefig('network_analysis.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("\nAz elemzés kész! A részletes vizualizációk a 'network_analysis.png' fájlban találhatók.") 
+print("\nAz elemzés kész! A részletes vizualizációk a 'network_analysis.png' fájlban találhatók.")
+
+def analyze_network(edges_file='edges.csv', nodes_file='nodes.csv'):
+    # Adatok betöltése
+    edges_df = pd.read_csv(edges_file)
+    nodes_df = pd.read_csv(nodes_file)
+    
+    # Hálózat létrehozása
+    G = nx.Graph()
+    
+    # Csomópontok hozzáadása
+    for _, row in nodes_df.iterrows():
+        G.add_node(row['Id'], 
+                   weight=row['Weight'],
+                   country=row['Country'],
+                   continent=row['Continent'],
+                   order=row['Order'],
+                   age=row['Age'])
+    
+    # Élek hozzáadása
+    for _, row in edges_df.iterrows():
+        G.add_edge(row['Source'], row['Target'], weight=row['Weight'])
+    
+    print(f"Hálózat statisztikái:")
+    print(f"Csomópontok száma: {G.number_of_nodes()}")
+    print(f"Élek száma: {G.number_of_edges()}")
+    
+    # Közösségi detektálás Louvain módszerrel
+    communities = community_louvain.best_partition(G)
+    
+    # Közösségek számának kiírása
+    n_communities = len(set(communities.values()))
+    print(f"Detektált közösségek száma: {n_communities}")
+    
+    # Közösségi attribútum hozzáadása a csomópontokhoz
+    nx.set_node_attributes(G, communities, 'community')
+    
+    # Közösségek méretének vizualizálása
+    community_sizes = pd.Series(communities.values()).value_counts()
+    plt.figure(figsize=(10, 6))
+    community_sizes.plot(kind='bar')
+    plt.title('Közösségek mérete')
+    plt.xlabel('Közösség ID')
+    plt.ylabel('Csomópontok száma')
+    plt.savefig('community_sizes.png')
+    plt.close()
+    
+    # Hálózat vizualizálása közösségekkel
+    plt.figure(figsize=(15, 15))
+    
+    # Pozíciók számítása
+    pos = nx.spring_layout(G, k=1, iterations=50)
+    
+    # Csomópontok rajzolása közösségek szerint színezve
+    node_colors = [communities[node] for node in G.nodes()]
+    node_sizes = [G.nodes[node]['weight']/10 for node in G.nodes()]
+    
+    nx.draw_networkx_nodes(G, pos, 
+                          node_color=node_colors,
+                          node_size=node_sizes,
+                          alpha=0.8)
+    
+    # Élek rajzolása
+    edge_weights = [G[u][v]['weight'] for u, v in G.edges()]
+    nx.draw_networkx_edges(G, pos, 
+                          width=edge_weights,
+                          alpha=0.2)
+    
+    # Címkék rajzolása
+    nx.draw_networkx_labels(G, pos, 
+                           font_size=8,
+                           font_family='sans-serif')
+    
+    plt.title('Bíborosok hálózata közösségekkel')
+    plt.axis('off')
+    plt.savefig('network_visualization.png')
+    plt.close()
+    
+    # Közösségi statisztikák
+    community_stats = {}
+    
+    for community_id in set(communities.values()):
+        # Közösséghez tartozó csomópontok
+        community_nodes = [node for node, comm in communities.items() if comm == community_id]
+        
+        # Alhálózat létrehozása
+        subgraph = G.subgraph(community_nodes)
+        
+        # Statisztikák számítása
+        stats = {
+            'size': len(community_nodes),
+            'density': nx.density(subgraph),
+            'avg_degree': sum(dict(subgraph.degree()).values()) / len(community_nodes),
+            'avg_weight': np.mean([G.nodes[node]['weight'] for node in community_nodes]),
+            'countries': len(set(G.nodes[node]['country'] for node in community_nodes)),
+            'continents': len(set(G.nodes[node]['continent'] for node in community_nodes))
+        }
+        
+        community_stats[community_id] = stats
+    
+    # Statisztikák DataFrame-be konvertálása
+    stats_df = pd.DataFrame.from_dict(community_stats, orient='index')
+    stats_df.index.name = 'Community'
+    
+    # Statisztikák mentése CSV-be
+    stats_df.to_csv('community_stats.csv')
+    
+    # Közösségek jellemzőinek vizualizálása
+    fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+    
+    # Sűrűség
+    sns.barplot(x=stats_df.index, y='density', data=stats_df, ax=axes[0,0])
+    axes[0,0].set_title('Közösségek sűrűsége')
+    
+    # Átlagos fokszám
+    sns.barplot(x=stats_df.index, y='avg_degree', data=stats_df, ax=axes[0,1])
+    axes[0,1].set_title('Átlagos fokszám')
+    
+    # Országok száma
+    sns.barplot(x=stats_df.index, y='countries', data=stats_df, ax=axes[1,0])
+    axes[1,0].set_title('Országok száma')
+    
+    # Kontinensek száma
+    sns.barplot(x=stats_df.index, y='continents', data=stats_df, ax=axes[1,1])
+    axes[1,1].set_title('Kontinensek száma')
+    
+    plt.tight_layout()
+    plt.savefig('community_characteristics.png')
+    plt.close()
+    
+    # Közösségek jellemzőinek korrelációja
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(stats_df.corr(), annot=True, cmap='coolwarm', center=0)
+    plt.title('Közösségi jellemzők korrelációja')
+    plt.savefig('community_correlations.png')
+    plt.close()
+    
+    return G, communities, stats_df
+
+if __name__ == "__main__":
+    G, communities, stats_df = analyze_network() 

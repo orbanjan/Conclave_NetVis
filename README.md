@@ -1,62 +1,69 @@
-# 085_Conclave_NetVis  
-📊 Visualizing the 2025 Papal Conclave: A Network Analysis Approach with Python & Gephi
+# Conclave Network Analysis
 
-Over the past few days, I developed a data-driven network analysis project focused on the upcoming 2025 Papal Conclave. Using Python and Gephi, I explored how relationships among cardinals can be mapped based on shared characteristics — revealing potential influence hubs and regional patterns.
+Ez a projekt a bíborosok közötti kapcsolatok hálózati elemzését végzi el. A projekt négy fő Python fájlból áll:
 
-🔍 Project Goals
-The aim was to:
+## 1. conclave_generate.py
+Ez a fájl felelős a hálózat generálásáért:
+- Betölti a bíborosok adatait a `data/cardinals.csv` fájlból
+- Automatikusan meghatározza a kontinenseket az országok alapján
+- Létrehoz egy súlyozott hálózatot, ahol:
+  - A csomópontok a bíborosok
+  - Az élek a bíborosok közötti kapcsolatokat jelölik
+  - A súlyok a kapcsolatok erősségét mutatják (pl. ugyanaz a pápa, ugyanaz a konsisztórium, stb.)
+- Exportálja a hálózatot `edges.csv` és `nodes.csv` formátumban
 
-Clean and enrich the cardinals dataset from Kaggle
+## 2. cluster_analysis.py
+Ez a fájl végzi a közösségi elemzést:
+- Betölti a generált hálózatot
+- Kiszámítja az alapvető hálózati jellemzőket (átmérő, átlagos fokszám, stb.)
+- Közösségi detektálást végez a Louvain módszerrel
+- Elemzi a közösségek jellemzőit (méret, átlagéletkor, CB arány, stb.)
+- Létrehoz négy vizualizációs fájlt:
+  - `community_sizes.png`: Közösségek mérete
+  - `community_characteristics.png`: Közösségek jellemzői
+  - `community_correlations.png`: Korrelációs mátrix
+  - `network_visualization.png`: Hálózat vizualizáció
 
-Construct a weighted similarity network based on attributes like:
+## 3. network_analysis.py
+Ez a fájl a hálózat részletes elemzését végzi:
+- Hálózati metrikák számítása
+- Közösségi detektálás
+- Vizualizációk generálása
+- Statisztikák készítése
 
-Age
+## 4. conclave_analysis.py
+Ez a fájl a bíborosok adatainak elemzését végzi:
+- Demográfiai elemzés
+- Országok és kontinensek eloszlása
+- Életkor és rang szerinti elemzés
+- Statisztikák és vizualizációk készítése
 
-Country & Continent
+## Telepítés
 
-Papal appointment (Pope & Date)
+A projekt futtatásához szükséges csomagok:
+```bash
+pip install pandas networkx python-louvain matplotlib seaborn numpy scikit-learn pycountry pycountry-convert
+```
 
-Religious Order (special emphasis on CB = Cardinal Bishops)
+## Használat
 
-Export the resulting graph structure for visual exploration in Gephi
+1. Először futtasd a `conclave_generate.py` fájlt a hálózat generálásához:
+```bash
+python conclave_generate.py
+```
 
-🛠️ How it Works (Core Steps in Python):
-Data Cleaning
+2. Ezután futtasd a `cluster_analysis.py` fájlt a közösségi elemzéshez:
+```bash
+python cluster_analysis.py
+```
 
-Removed annotation artifacts in country names
+3. Opcionálisan futtathatod a `network_analysis.py` és `conclave_analysis.py` fájlokat további elemzésekhez.
 
-Mapped countries to continents manually
+## Kimenetek
 
-Feature Engineering
-
-Encoded multiple similarity dimensions between cardinals
-
-Used logic to prioritize under-70 members and Cardinal Bishops
-
-Edge Construction
-
-For every pair of cardinals, computed a Weight based on:
-
-Same Pope (+1)
-
-Same Date (+1)
-
-Both under 70 (+2), one under 70 (+1)
-
-Same Country or Continent (+1 each)
-
-Shared CB order (+2), one CB (+1)
-
-Node Strength Calculation
-
-Calculated total connection strength per cardinal using edge weights
-
-Gephi Export
-
-edges.csv: Source, Target, Weight
-
-nodes.csv: Id, Age, Country, Order, Continent, Weight
-
-🧠 Why It Matters
-This kind of network-based insight goes beyond simple rankings — it reveals clusters, influence bridges, and isolated figures. Such analysis can help journalists, historians, and data scientists anticipate voting dynamics or visualize institutional structures.
+A program több vizualizációs fájlt és CSV-t generál:
+- `edges.csv`: A hálózat élei
+- `nodes.csv`: A hálózat csomópontjai
+- Különböző PNG fájlok a vizualizációkhoz
+- Statisztikai összefoglalók a konzol kimenetében
 
